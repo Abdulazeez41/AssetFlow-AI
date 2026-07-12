@@ -180,7 +180,7 @@ export default async function DashboardPage() {
               </p>
             </div>
 
-            {hasProof ? (
+            {hasProof && snapshot.asset.proof ? (
               <div className="space-y-3 rounded-2xl border border-white/10 bg-black/20 p-4">
                 <div className="flex items-center gap-2 text-sm">
                   <FileText className="h-4 w-4 text-primary" />
