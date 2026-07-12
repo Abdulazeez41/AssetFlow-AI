@@ -1,0 +1,59 @@
+{
+  "upload": "Uploaded",
+  "ai": {
+    "approved": true,
+    "confidence": 98,
+    "reason": "Amount matches lease, no duplicates detected, and receipt date is within the settlement window.",
+    "risks": [],
+    "hash": "0x1fd501fb64c8e060b4c51833f7df18d75374c316c81855a88efed9d92a75e211",
+    "analysis": [
+      "✓ Amount matches lease schedule",
+      "✓ Due date within covenant window",
+      "✓ No duplicate settlement reference detected"
+    ],
+    "duplicateDetected": false,
+    "amountMatches": true,
+    "dueDateValid": true,
+    "rawProvider": "mock"
+  },
+  "aiOnChain": {
+    "approved": true,
+    "confidence": 98,
+    "hashValue": "0x1fd501fb64c8e060b4c51833f7df18d75374c316c81855a88efed9d92a75e211"
+  },
+  "hsp": {
+    "ok": true,
+    "outcomeClass": "ACCEPT",
+    "requiredCapabilities": [
+      "AMOUNT_MATCH",
+      "REFERENCE_UNIQUE",
+      "DUE_DATE_VALID"
+    ],
+    "satisfiedCapabilities": [
+      "AMOUNT_MATCH",
+      "REFERENCE_UNIQUE",
+      "DUE_DATE_VALID",
+      "AI_CONFIDENCE_HIGH"
+    ],
+    "adapterAddress": "0x688eb62266644EF575126a08e14E74De77590780",
+    "receiptHash": "0xbab4fec15adcb40d2925b1ffdab5bcdd7039e0737ec703774bedf9480a82aeb3",
+    "details": "Mock HSP verifier accepted the receipt because every required settlement capability is satisfied.",
+    "mocked": true
+  },
+  "contract": {
+    "depositTx": "0xdefef7529f811694408bbbdc6da864922cfde7c7d8293cae7d13b70fc15999b2",
+    "approveTx": "0xd6edf8c85e8eb1de1723650c214a23f017168e696e2ffc5f2eabec168133179a",
+    "currentCycle": 2,
+    "cycleOneApproved": true
+  },
+  "distribution": {
+    "investorCount": 125,
+    "amount": 15000,
+    "txHash": "0xd6edf8c85e8eb1de1723650c214a23f017168e696e2ffc5f2eabec168133179a"
+  },
+  "completePageChecks": {
+    "hasInvestorsHeadline": true,
+    "hasDistributionHeadline": true,
+    "hasTxHash": true
+  }
+}
