@@ -1,0 +1,8 @@
+{
+  "network": "hashkeyMainnet",
+  "assetToken": "0x6f33584fDAcC43ce160E0Bc6f7779c5224016690",
+  "aiVerifier": "0x4529Ea3e070CBBbB27D2A6Ff56aBA21C2cD7bc6D",
+  "revenuePool": "0x39937C914cDdeDe9133d02211aE29DBcC7cD7146",
+  "deployer": "0x3d82C1FC101F522b7F770EFafaBE7F247993deCF",
+  "aiSigner": "0x4825fA85e12118033C2E87c0DbB9d8e54781d71f"
+}
