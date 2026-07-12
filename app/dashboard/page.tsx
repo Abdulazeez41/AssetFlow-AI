@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { getDashboardSnapshot } from "@/lib/demo";
 import { getInvestors } from "@/lib/db";
 import { formatCurrency } from "@/lib/utils";
+import type { InvestorPayout } from "@/lib/types";
 import {
   Building2,
   TrendingUp,
@@ -27,7 +28,7 @@ export default async function DashboardPage() {
 
   const displayRentFormatted = hasProof ? formatCurrency(displayRent) : "-";
 
-  let previewPayouts = [];
+  let previewPayouts: InvestorPayout[] = [];
   if (hasProof && investors.length > 0) {
     const totalBps = investors.reduce((sum, inv) => sum + inv.bps, 0);
     const totalCents = Math.round(displayRent * 100);
