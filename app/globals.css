@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background: linear-gradient(180deg, #051512 0%, #071e19 45%, #051411 100%);
+  color: #eafaf5;
+  min-height: 100%;
+}
+
+body {
+  @apply antialiased bg-radial;
+}
+
+* {
+  @apply border-border;
+}
+
+.glass {
+  backdrop-filter: blur(18px);
+  background: linear-gradient(
+    180deg,
+    rgba(10, 36, 32, 0.92),
+    rgba(6, 21, 18, 0.88)
+  );
+}
+
+.metric-chip {
+  @apply rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-300;
+}
+
+.sky-glow {
+  box-shadow:
+    0 0 0 1px rgba(76, 195, 232, 0.25),
+    0 20px 60px rgba(76, 195, 232, 0.08);
+}
+
+::selection {
+  background: rgba(47, 174, 139, 0.35);
+}
