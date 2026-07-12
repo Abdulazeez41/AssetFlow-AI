@@ -4,34 +4,11 @@
       "id": "building-a",
       "name": "Building A",
       "expectedMonthlyRent": 1,
-      "monthlyRentLabel": "$1",
-      "status": "Uploaded",
+      "monthlyRentLabel": "$15,000",
+      "status": "Waiting",
       "dueDate": "2026-07-05",
-      "proof": {
-        "fileName": "receipt.pdf",
-        "amount": 1500,
-        "referenceId": "REF20230715-01",
-        "date": "2023-07-15",
-        "uploadedAt": "2026-07-12T00:07:10.381Z"
-      },
-      "aiVerification": {
-        "approved": false,
-        "confidence": 62,
-        "reason": "One or more controls require manual review: amount mismatch, duplicate reference, or late settlement date.",
-        "risks": [
-          "Receipt amount does not match the expected lease payment."
-        ],
-        "hash": "0x9d0d06cc32e887a6942d7d35393babd9f848645c420701963aeca38da2dc25ae",
-        "analysis": [
-          "✗ Amount mismatch against lease schedule",
-          "✓ Due date within covenant window",
-          "✓ No duplicate settlement reference detected"
-        ],
-        "duplicateDetected": false,
-        "amountMatches": false,
-        "dueDateValid": true,
-        "rawProvider": "mock"
-      },
+      "proof": null,
+      "aiVerification": null,
       "hspVerification": null,
       "distribution": null
     }

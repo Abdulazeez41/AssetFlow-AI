@@ -28,6 +28,7 @@ export function buildSeedAsset(): AssetRecord {
     id: "building-a",
     name: "Building A",
     expectedMonthlyRent: DEMO_MONTHLY_REVENUE,
+    displayAmount: 15000,
     monthlyRentLabel: "$1",
     status: "Waiting",
     dueDate: "2026-07-05",

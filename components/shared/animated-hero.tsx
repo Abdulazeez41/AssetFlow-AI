@@ -93,7 +93,7 @@ export function AnimatedHero() {
           className="flex flex-wrap gap-4 pt-4"
         >
           <Link href="/dashboard">
-            <Button size="lg" className="group relative overflow-hidden">
+            <Button className="group relative overflow-hidden">
               <span className="relative z-10 flex items-center">
                 Launch App Dashboard
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -107,7 +107,7 @@ export function AnimatedHero() {
             </Button>
           </Link>
           <Link href="/upload">
-            <Button size="lg" variant="secondary">
+            <Button variant="secondary">
               View Live Demo
             </Button>
           </Link>
