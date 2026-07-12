@@ -180,7 +180,6 @@ Want to dive deeper into the code? We've got you covered:
 - [🔌 API Documentation](docs/api.md) - How the Next.js backend routes work.
 - [⛓️ Smart Contract Documentation](docs/contracts.md) - Deep dive into the 3 Solidity contracts.
 - [⚙️ Environment Variables](docs/env.md) - Explanation of every configuration option.
-- [🎤 Demo Guide](docs/demo-guide.md) - A script for presenting to judges.
 
 ---
 
