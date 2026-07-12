@@ -11,7 +11,7 @@ A simple mock ERC20 representing tokenized ownership in Building A.
 
 ## 2. `AIVerifier.sol`
 
-Stores the minimal Revenue verification state on-chain.
+Stores the minimal AI verification state on-chain.
 
 ### Stored fields
 
@@ -30,9 +30,9 @@ Distribution engine handling revenue intake, approval, and investor claims.
 
 ### Required functions
 
-- `depositRevenue()` — accepts payable revenue from the owner.
-- `approveDistribution(bytes32,uint256)` — locks the current cycle, stores verification metadata, and advances the cycle.
-- `claimReward()` — allows token holders to claim their share for the latest approved cycle.
+- `depositRevenue()` - accepts payable revenue from the owner.
+- `approveDistribution(bytes32,uint256)` - locks the current cycle, stores verification metadata, and advances the cycle.
+- `claimReward()` - allows token holders to claim their share for the latest approved cycle.
 
 ### Security review
 

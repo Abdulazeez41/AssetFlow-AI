@@ -1,7 +1,7 @@
 export type AssetStatus =
   | "Waiting"
   | "Uploaded"
-  | "AI Verified"
+  | "Revenue Verified"
   | "HSP Accepted"
   | "Distributed";
 

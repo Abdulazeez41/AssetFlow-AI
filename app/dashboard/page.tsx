@@ -88,7 +88,9 @@ export default async function DashboardPage() {
           subtext={
             snapshot.asset.status === "Waiting"
               ? "Awaiting proof upload"
-              : "In progress"
+              : snapshot.asset.status === "Revenue Verified"
+                ? "AI verification complete"
+                : "In progress"
           }
           accent="amber"
         />
