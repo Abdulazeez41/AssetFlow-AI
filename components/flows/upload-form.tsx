@@ -300,7 +300,6 @@ export function UploadForm() {
           {/* Submit button */}
           <Button
             className="w-full"
-            size="lg"
             disabled={
               saving ||
               isScanning ||

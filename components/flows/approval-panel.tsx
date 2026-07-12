@@ -329,7 +329,6 @@ export function ApprovalPanel({ asset }: { asset: AssetRecord }) {
       <div className="flex flex-wrap gap-3">
         {!wallet ? (
           <Button
-            size="lg"
             variant="secondary"
             onClick={connectWallet}
             disabled={connecting || !isAccepted}
@@ -345,12 +344,7 @@ export function ApprovalPanel({ asset }: { asset: AssetRecord }) {
         ) : null}
 
         {hsp && !isAccepted ? (
-          <Button
-            size="lg"
-            variant="secondary"
-            onClick={runHsp}
-            disabled={hspLoading}
-          >
+          <Button variant="secondary" onClick={runHsp} disabled={hspLoading}>
             {hspLoading ? "Re-checking..." : "Re-check HSP settlement"}
           </Button>
         ) : null}
