@@ -19,12 +19,10 @@ export default async function DashboardPage() {
   const snapshot = await getDashboardSnapshot();
   const investors = await getInvestors();
 
-  const hasProof = snapshot.asset.proof !== null;
-
-  // DYNAMIC: Use the proof amount if uploaded, otherwise use the asset's displayAmount
-  // (Falls back to 15000 just in case the seed data hasn't been updated yet)
+  const proof = snapshot.asset.proof;
+  const hasProof = proof !== null;
   const displayRent = hasProof
-    ? snapshot.asset.proof.amount
+    ? proof.amount
     : (snapshot.asset as any).displayAmount || 15000;
 
   const displayRentFormatted = hasProof ? formatCurrency(displayRent) : "-";
